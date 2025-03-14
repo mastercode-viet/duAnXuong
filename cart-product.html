@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart - Furniro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Giỏ hàng</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Cart</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Asgaard sofa</td>
+                    <td>Rs. 250,000.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>Rs. 250,000.00</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <section class="cart-totals">
+            <h2>Cart Totals</h2>
+            <p>Subtotal: Rs. 250,000.00</p>
+            <p>Total: Rs. 250,000.00</p>
+            <button>Check Out</button>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="info">
+            <p><strong>High Quality</strong> crafted from top materials</p>
+            <p><strong>Warranty Protection</strong> Over 2 years</p>
+            <p><strong>Free Shipping</strong> Order over 150 $</p>
+            <p><strong>24 / 7 Support</strong> Dedicated support</p>
+        </div>
+        <div class="contact">
+            <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+            <p>Furniro</p>
+        </div>
+        <div class="links">
+            <p><a href="#">Payment Options</a></p>
+            <p><a href="#">Returns</a></p>
+            <p><a href="#">Privacy Policies</a></p>
+        </div>
+        <div class="newsletter">
+            <p>Newsletter</p>
+            <input type="email" placeholder="Enter Your Email Address">
+            <button>SUBSCRIBE</button>
+        </div>
+        <p>&copy; 2023 Furniro. All rights reserved.</p>
+    </footer>
 </body>
 </html>
