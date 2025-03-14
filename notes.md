@@ -1,5 +1,0 @@
-
-trong: jsbvksbv
-
-
-quyrnf 
