@@ -16,6 +16,12 @@ function App() {
             <Route path="add" element={<ProductAdd />} />
             <Route path="edit/:id" element={<ProductEdit />} />
           </Route>
+          <Route path="products">
+            <Route index element={<ProductList />} />
+            <Route path="add" element={<ProductAdd />} />
+            <Route path="edit/:id" element={<ProductEdit />} />
+          </Route>
+
         </Route>
         <Route path="login" element={<h1>Login</h1>} />
         <Route path="*" element={<h1>404</h1>} />
