@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+my-react-app/
+│── node_modules/          # Thư viện cài đặt từ npm
+│── public/                # Chứa các file tĩnh (favicon, index.html, ảnh, v.v.)
+│── src/                   # Mã nguồn chính của dự án
+│   ├── assets/            # Chứa hình ảnh, icon, font, file CSS chung
+│   ├── components/        # Các component tái sử dụng
+│   ├── pages/             # Các trang chính của ứng dụng
+│   ├── layouts/           # Các layout dùng chung
+│   ├── types/             # Định nghĩa TypeScript interfaces, types
+│   ├── App.tsx            # Component gốc của ứng dụng
+│   ├── main.tsx           # File entry chính (render ứng dụng vào root)
+│── .gitignore             # Cấu hình file bị bỏ qua khi đẩy lên Git
+│── package.json           # Khai báo dependencies và scripts
+│── tsconfig.json          # Cấu hình TypeScript
+│── vite.config.ts         # Cấu hình Vite (nếu dùng Vite)
+│── README.md              # Mô tả dự án
+│── notes.md               # notes cá nhân của từng thành viên 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
