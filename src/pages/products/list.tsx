@@ -87,7 +87,7 @@ const ProductList = () => {
             <h2 className="text-2xl mb-5 font-semibold">Products</h2>
             <Table dataSource={data} columns={columns} />
             {contextHolder}
-            <h2>,anva.kdnv.k</h2>
+           
         </div>
     );
 };
