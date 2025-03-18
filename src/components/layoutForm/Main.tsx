@@ -1,8 +1,45 @@
 "use client";
 
 import * as React from "react";
-import { SectionHeader } from "./SectionHeader";
-import { CategoryCard } from "./CategoryCard";
+
+interface SectionHeaderProps {
+  title: string;
+  description: string;
+}
+
+const SectionHeader: React.FC<SectionHeaderProps> = ({ title, description }) => {
+  return (
+    <header className="flex flex-col items-center mb-16 text-center max-md:mb-10 max-sm:mb-8">
+      <h2 className="mb-4 text-3xl font-bold text-zinc-800 max-md:text-3xl max-sm:text-2xl">
+        {title}
+      </h2>
+      <p className="text-xl text-stone-500 max-md:text-lg max-sm:text-base">
+        {description}
+      </p>
+    </header>
+  );
+};
+
+interface CategoryCardProps {
+  image: string;
+  altText: string;
+  title: string;
+}
+
+const CategoryCard: React.FC<CategoryCardProps> = ({ image, altText, title }) => {
+  return (
+    <article className="flex flex-col items-center">
+      <img
+        src={image}
+        alt={altText}
+        className="w-full h-[480px] object-cover rounded-[8px] mb-[20px]"
+      />
+      <h3 className="text-2xl font-bold text-zinc-800 max-md:text-xl max-sm:text-lg">
+        {title}
+      </h3>
+    </article>
+  );
+};
 
 const categories = [
   {
@@ -25,7 +62,7 @@ const categories = [
   },
 ];
 
-export const BrowseRange: React.FC = () => {
+const BrowseRange: React.FC = () => {
   return (
     <section className="flex flex-col items-center px-6 py-20 w-full max-md:py-16 max-sm:py-10">
       <div className="flex flex-col items-center w-full max-w-[1200px]">

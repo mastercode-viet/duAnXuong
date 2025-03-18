@@ -8,7 +8,8 @@ const { Header, Content, Footer, Sider } = Layout;
 const menuItems = [
     { key: 1, label: <Link to="/admin/dashboard">Dashboard</Link>, icon: <UserOutlined /> },
     { key: 2, label: <Link to="/admin/products">Products</Link>, icon: <VideoCameraOutlined /> },
-    { key: 3, label: "Users", icon: <UploadOutlined /> },
+    { key: 3, label: <Link to="/admin/category">Category</Link>, icon: <VideoCameraOutlined /> },
+
 ];
 const LayoutAdmin: React.FC = () => {
     const {

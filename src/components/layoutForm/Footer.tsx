@@ -1,11 +1,7 @@
 "use client";
 import * as React from "react";
-import { FooterLogo } from "./FooterLogo";
-import { FooterLinkSection } from "./FooterLinkSection";
-import { FooterNewsletter } from "./FooterNewsletter";
 
-
-const Footer: React.FC = () => {
+const Footers: React.FC = () => {
   const linksData = {
     title: "Links",
     links: ["Home", "Shop", "About", "Contact"],
@@ -16,6 +12,14 @@ const Footer: React.FC = () => {
     links: ["Payment Options", "Returns", "Privacy Policies"],
   };
 
+  const [email, setEmail] = React.useState("");
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Subscribe:", email);
+    setEmail("");
+  };
+
   return (
     <footer
       className="px-24 py-12 w-full bg-white border-t border-solid border-black border-opacity-20 
@@ -23,13 +27,65 @@ const Footer: React.FC = () => {
       aria-label="Website Footer"
     >
       <div className="flex mx-auto max-w-[1240px] max-md:flex-col max-md:gap-10">
-        <FooterLogo />
+        <div className="mr-36 w-[285px] max-md:w-full">
+          <h2 className="mb-12 text-2xl font-bold text-black">Funiro.</h2>
+          <address className="text-base leading-normal text-neutral-400 not-italic">
+            400 University Drive Suite 200 Coral Gables, FL 33134 USA
+          </address>
+        </div>
+
         <div className="flex gap-36 max-md:flex-wrap max-md:gap-10 max-sm:flex-col max-sm:gap-8">
-          <FooterLinkSection title={linksData.title} links={linksData.links} />
-          <FooterLinkSection title={helpData.title} links={helpData.links} />
-          <FooterNewsletter />
+          <nav className="flex flex-col">
+            <h3 className="mb-14 text-base text-neutral-400">{linksData.title}</h3>
+            <ul className="flex flex-col gap-12">
+              {linksData.links.map((link, index) => (
+                <li key={index}>
+                  <a href="#" className="text-base text-black hover:underline">
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav className="flex flex-col">
+            <h3 className="mb-14 text-base text-neutral-400">{helpData.title}</h3>
+            <ul className="flex flex-col gap-12">
+              {helpData.links.map((link, index) => (
+                <li key={index}>
+                  <a href="#" className="text-base text-black hover:underline">
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <section className="flex flex-col ml-20">
+            <h3 className="mb-14 text-base text-neutral-400">Newsletter</h3>
+            <form
+              onSubmit={handleSubscribe}
+              className="flex relative justify-between mt-14 max-sm:flex-col max-sm:gap-5"
+            >
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter Your Email Address"
+                className="pb-1 text-sm border-b border-solid border-b-black text-neutral-400 w-[200px] max-sm:w-full bg-transparent outline-none"
+                required
+              />
+              <button
+                type="submit"
+                className="pb-1 text-sm text-black border-b border-solid cursor-pointer border-b-black max-sm:w-full hover:opacity-80"
+              >
+                SUBSCRIBE
+              </button>
+            </form>
+          </section>
         </div>
       </div>
+
       <div className="mx-auto mt-12 max-w-[1240px]">
         <hr className="mb-9 h-px bg-zinc-300" />
         <p className="text-base text-black text-center">
@@ -40,4 +96,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer;
+export default Footers;

@@ -1,25 +1,77 @@
 {
   "products": [
     {
-      "id": 8,
+      "id": "8",
       "name": "Product 8",
       "price": 16.99,
       "status": "available",
       "imageUrl": "https://picsum.photos/8/200/300"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Product 9",
       "price": 17.99,
       "status": "available",
       "imageUrl": "https://picsum.photos/9/200/300"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Product 10",
       "price": 18.99,
       "status": "available",
       "imageUrl": "https://picsum.photos/10/200/300"
+    }
+  ],
+  "category": [
+    {
+      "name": "Nike update ",
+      "image": "https://picsum.photos/200/300",
+      "id": "7854"
+    },
+    {
+      "id": "ce9e",
+      "name": "bố việt",
+      "image": "ssdf"
+    },
+    {
+      "id": "10d0",
+      "name": "dsfsd",
+      "image": "fsdf"
+    },
+    {
+      "name": "sdfs updadte",
+      "image": "fdsf",
+      "id": "4d75"
+    },
+    {
+      "id": "e19c",
+      "name": "sdfds",
+      "image": "sdfdsfds"
+    },
+    {
+      "id": "daa4",
+      "name": "sdfs",
+      "image": "fsf"
+    },
+    {
+      "id": "53f1",
+      "name": "fsdf",
+      "image": "sdfs"
+    },
+    {
+      "id": "12fe",
+      "name": "ưerwe",
+      "image": "ưerwerwer"
+    },
+    {
+      "id": "a7cb",
+      "name": "ưerew",
+      "image": "rewr"
+    },
+    {
+      "id": "c301",
+      "name": "việt lolo\\",
+      "image": "svsdv"
     }
   ]
 }

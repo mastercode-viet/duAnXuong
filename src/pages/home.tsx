@@ -1,19 +1,25 @@
 import * as React from "react";
-import Banner from "../components/layoutForm/Banner";
-import BrowseRange from "../components/layoutForm/BrowseRange";
-import RoomInspiration from "../components/layoutForm/Roomlnspiration";
+import BrowseRange from "../components/layoutForm/Main";
+import Footers from "../components/layoutForm/Footer";
+import NewCollectionHero from "../components/layoutForm/Header";
+import RoomInspiration from "../components/layoutForm/1";
+import ProductGrid from "../components/layoutForm/ProductGrid";
 
-import Share from "../components/layoutForm/Share";
-import { Footer } from "antd/es/layout/layout";
+
 
 const Home: React.FC = () => {
   return (
     <div>
-      <Banner />
+      {/* header */}
+      <NewCollectionHero />  
+      
+      {/* main */}
       <BrowseRange />
       <RoomInspiration />
-      <Share />
-      <Footer />
+      <ProductGrid />
+    
+      {/* footer */}
+      <Footers />
     </div>
   );
 };
