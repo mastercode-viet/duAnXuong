@@ -30,7 +30,9 @@ const Footers: React.FC = () => {
         <div className="mr-36 w-[285px] max-md:w-full">
           <h2 className="mb-12 text-2xl font-bold text-black">Funiro.</h2>
           <address className="text-base leading-normal text-neutral-400 not-italic">
-            400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            400 University Drive Suite 200 Coral Gables,
+            <br />
+             FL 33134 USA
           </address>
         </div>
 
@@ -88,7 +90,7 @@ const Footers: React.FC = () => {
 
       <div className="mx-auto mt-12 max-w-[1240px]">
         <hr className="mb-9 h-px bg-zinc-300" />
-        <p className="text-base text-black text-center">
+        <p className="text-base text-black">
           &copy; {new Date().getFullYear()} Furino. All rights reserved.
         </p>
       </div>

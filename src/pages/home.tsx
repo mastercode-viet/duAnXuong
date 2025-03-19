@@ -14,9 +14,9 @@ const Home: React.FC = () => {
       <NewCollectionHero />  
       
       {/* main */}
-      <BrowseRange />
+      {/* <BrowseRange />
       <RoomInspiration />
-      <ProductGrid />
+      <ProductGrid /> */}
     
       {/* footer */}
       <Footers />

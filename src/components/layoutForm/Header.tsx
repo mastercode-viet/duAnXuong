@@ -162,7 +162,7 @@ const NewCollectionHero: React.FC = () => {
           alt="Collection Background"
           className="object-cover absolute inset-0 size-full pointer-events-none"
         />
-        {/* <ContentBox /> */}
+        <ContentBox />
       </div>
     </section>
   );
