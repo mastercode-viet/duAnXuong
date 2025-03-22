@@ -16,7 +16,7 @@ const SignUp = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <Card className="w-96 p-6 shadow-lg rounded-2xl">
-        <h2 className="text-2xl font-bold text-center mb-4">Đăng Ký</h2>
+        <h2 className="text-2xl font-bold text-center mb-4">Register</h2>
         <Form name="signup" onFinish={onFinish} layout="vertical">
           <Form.Item
             name="email"
@@ -43,10 +43,6 @@ const SignUp = () => {
               ]}
           >
             <Input.Password prefix={<LockOutlined />} placeholder="Mật khẩu" />
-          </Form.Item>
-
-          <Form.Item name="agree" valuePropName="checked">
-            <Checkbox>Tôi đồng ý với điều khoản</Checkbox>
           </Form.Item>
 
           <Form.Item>

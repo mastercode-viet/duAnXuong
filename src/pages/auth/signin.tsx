@@ -1,16 +1,33 @@
 import React from "react";
-import { Form, Input, Button, Card } from "antd";
+import { Form, Input, Button, Card, message } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 
 const SigIn = () => {
     const nav = useNavigate();
-  const onFinish = (values:any) => {
-    console.log("Login values: ", values);
-    setTimeout(() => {
+  const onFinish = async (values:any) => {
+    try {
+        console.log("Login values:", values);
+    
+        // Lấy thông tin user từ localStorage (giả lập)
+        const savedUser = JSON.parse(localStorage.getItem("user") || "{}");
+    
+        if (!savedUser.username || !savedUser.password) {
+          alert("Không tìm thấy tài khoản! Vui lòng đăng ký.");
+        }
+    
+        if (values.username !== savedUser.username || values.password !== savedUser.password) {
+         alert("Sai tài khoản hoặc mật khẩu!");
+        }
+    
         localStorage.setItem("token", "fake-jwt-token"); // Lưu token
-        nav("/admin"); // Chuyển hướng vào trang Admin
-      }, 2000);
+        message.success("Đăng nhập thành công!");
+        setTimeout(() => {
+          nav("/signin"); // Chuyển hướng vào trang Admin
+        }, 2000);
+      } catch (error: any) {
+        message.error(error.message);
+      }
   };
 
   return (
