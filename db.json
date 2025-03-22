@@ -5,21 +5,80 @@
       "name": "Product 8",
       "price": 16.99,
       "status": "available",
-      "imageUrl": "https://picsum.photos/8/200/300"
+      "imageUrl": "https://picsum.photos/200/300",
+      "description": "Hanoimoto X150 là sự kết hợp hoàn hảo giữa phong cách thể thao và công nghệ tiên tiến. Với thiết kế khí động học, đường nét sắc sảo, và hệ thống đèn LED hiện đại, X150 mang đến diện mạo mạnh mẽ, cuốn hút ngay từ cái nhìn đầu tiên.",
+      "originalPrice": 190000000000,
+      "description_sort": "available"
     },
     {
       "id": "9",
       "name": "Product 9",
       "price": 17.99,
       "status": "available",
-      "imageUrl": "https://picsum.photos/9/200/300"
+      "imageUrl": "https://picsum.photos/200/300",
+      "description": "Hanoimoto X150 là sự kết hợp hoàn hảo giữa phong cách thể thao và công nghệ tiên tiến. Với thiết kế khí động học, đường nét sắc sảo, và hệ thống đèn LED hiện đại, X150 mang đến diện mạo mạnh mẽ, cuốn hút ngay từ cái nhìn đầu tiên.",
+      "originalPrice": 190000000000,
+      "description_sort": "available"
     },
     {
       "id": "10",
       "name": "Product 10",
       "price": 18.99,
       "status": "available",
-      "imageUrl": "https://picsum.photos/10/200/300"
+      "imageUrl": "https://picsum.photos/200/300",
+      "description": "Hanoimoto X150 là sự kết hợp hoàn hảo giữa phong cách thể thao và công nghệ tiên tiến. Với thiết kế khí động học, đường nét sắc sảo, và hệ thống đèn LED hiện đại, X150 mang đến diện mạo mạnh mẽ, cuốn hút ngay từ cái nhìn đầu tiên.",
+      "originalPrice": 190000000000,
+      "description_sort": "available"
+    },
+    {
+      "id": "11",
+      "name": "Product 10",
+      "price": 18.99,
+      "status": "available",
+      "imageUrl": "https://picsum.photos/200/300",
+      "description": "Hanoimoto X150 là sự kết hợp hoàn hảo giữa phong cách thể thao và công nghệ tiên tiến. Với thiết kế khí động học, đường nét sắc sảo, và hệ thống đèn LED hiện đại, X150 mang đến diện mạo mạnh mẽ, cuốn hút ngay từ cái nhìn đầu tiên.",
+      "originalPrice": 190000000000,
+      "description_sort": "available"
+    },
+    {
+      "id": "12",
+      "name": "Product 10",
+      "price": 18.99,
+      "status": "available",
+      "imageUrl": "https://picsum.photos/200/300",
+      "description": "Hanoimoto X150 là sự kết hợp hoàn hảo giữa phong cách thể thao và công nghệ tiên tiến. Với thiết kế khí động học, đường nét sắc sảo, và hệ thống đèn LED hiện đại, X150 mang đến diện mạo mạnh mẽ, cuốn hút ngay từ cái nhìn đầu tiên.",
+      "originalPrice": 190000000000,
+      "description_sort": "available"
+    },
+    {
+      "id": "13",
+      "name": "Product 10",
+      "price": 18.99,
+      "status": "available",
+      "imageUrl": "https://picsum.photos/200/300",
+      "description": "Hanoimoto X150 là sự kết hợp hoàn hảo giữa phong cách thể thao và công nghệ tiên tiến. Với thiết kế khí động học, đường nét sắc sảo, và hệ thống đèn LED hiện đại, X150 mang đến diện mạo mạnh mẽ, cuốn hút ngay từ cái nhìn đầu tiên.",
+      "originalPrice": 190000000000,
+      "description_sort": "available"
+    },
+    {
+      "id": "14",
+      "name": "Product 10",
+      "price": 18.99,
+      "status": "available",
+      "imageUrl": "https://picsum.photos/200/300",
+      "description": "Hanoimoto X150 là sự kết hợp hoàn hảo giữa phong cách thể thao và công nghệ tiên tiến. Với thiết kế khí động học, đường nét sắc sảo, và hệ thống đèn LED hiện đại, X150 mang đến diện mạo mạnh mẽ, cuốn hút ngay từ cái nhìn đầu tiên.",
+      "originalPrice": 190000000000,
+      "description_sort": "available"
+    },
+    {
+      "id": "15",
+      "name": "Product 10",
+      "price": 18.99,
+      "status": "available",
+      "imageUrl": "https://picsum.photos/200/300",
+      "description": "Hanoimoto X150 là sự kết hợp hoàn hảo giữa phong cách thể thao và công nghệ tiên tiến. Với thiết kế khí động học, đường nét sắc sảo, và hệ thống đèn LED hiện đại, X150 mang đến diện mạo mạnh mẽ, cuốn hút ngay từ cái nhìn đầu tiên.",
+      "originalPrice": 190000000000,
+      "description_sort": "available"
     }
   ],
   "orders": [
@@ -112,6 +171,38 @@
           "price": 100000
         }
       ]
+    }
+  ],
+  "users": [
+    {
+      "name": "Admin User 1",
+      "image": "https://picsum.photos/200/300",
+      "email": "admin1@example.com",
+      "phone": "012345789",
+      "address": "Hà Nội, Việt Namm",
+      "role": "admin",
+      "status": "active",
+      "id": 1
+    },
+    {
+      "name": "Admin User 2",
+      "image": "https://picsum.photos/200/300",
+      "email": "admin2@example.com",
+      "phone": "012345789",
+      "address": "Hà Nội, Việt Namm",
+      "role": "admin",
+      "status": "inactive",
+      "id": 2
+    },
+    {
+      "name": "daks",
+      "image": "https://picsum.photos/200/300",
+      "email": "a@gmail.com",
+      "phone": "0111111111",
+      "address": "addddddddddddddddd",
+      "role": "user",
+      "status": "active",
+      "id": 3
     }
   ]
 }
