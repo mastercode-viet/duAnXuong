@@ -1,23 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useMutation,  useQueryClient } from "@tanstack/react-query";
 import { Button, Image, message, Popconfirm, Skeleton, Table } from "antd";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import useList from "../../hooks/useList";
 
 const ProductList = () => {
     const queryClient = useQueryClient();
     const [messageApi, contextHolder] = message.useMessage();
-    const { data, isLoading, isError, error } = useQuery({
-        queryKey: ["products"],
-        queryFn: async () => {
-            const response = await axios.get(`http://localhost:3000/products`);
-            console.log(response.data);
-            return response.data.map((product: any) => ({
-                key: product.id,
-                ...product,
-            }));
-        },
-    });
+    const { data, isLoading, isError, error } =  useList({ resource: "products" })
     const { mutate } = useMutation({
         mutationFn: async (id) => {
             return axios.delete(`http://localhost:3000/products/${id}`);

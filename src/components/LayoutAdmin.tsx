@@ -1,5 +1,5 @@
 import React from "react";
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from "@ant-design/icons";
+import { AppstoreOutlined, UploadOutlined, UserOutlined, VideoCameraOutlined } from "@ant-design/icons";
 import { Layout, Menu, theme } from "antd";
 import { Link, Outlet } from "react-router-dom";
 
@@ -9,6 +9,9 @@ const menuItems = [
     { key: 1, label: <Link to="/admin/dashboard">Dashboard</Link>, icon: <UserOutlined /> },
     { key: 2, label: <Link to="/admin/products">Products</Link>, icon: <VideoCameraOutlined /> },
     { key: 3, label: "Users", icon: <UploadOutlined /> },
+    { key: 4, label: <Link to="/admin/categories">Categories</Link> , icon: <AppstoreOutlined /> },
+    
+
 ];
 const LayoutAdmin: React.FC = () => {
     const {
