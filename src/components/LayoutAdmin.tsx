@@ -1,5 +1,5 @@
 import React from "react";
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from "@ant-design/icons";
+import { UnorderedListOutlined, UploadOutlined, UserOutlined, VideoCameraOutlined } from "@ant-design/icons";
 import { Layout, Menu, theme } from "antd";
 import { Link, Outlet } from "react-router-dom";
 
@@ -8,7 +8,14 @@ const { Header, Content, Footer, Sider } = Layout;
 const menuItems = [
     { key: 1, label: <Link to="/admin/dashboard">Dashboard</Link>, icon: <UserOutlined /> },
     { key: 2, label: <Link to="/admin/products">Products</Link>, icon: <VideoCameraOutlined /> },
-    { key: 3, label: "Users", icon: <UploadOutlined /> },
+    { key: 3, label: <Link to="/admin/orders">Orders</Link>, icon: <UnorderedListOutlined /> },
+    {
+        key: 4, label: <Link to="/admin/users">Users</Link>, icon: <UploadOutlined /> , 
+        children: [
+            { key: '5', label: <Link to="/admin/users/admin_user">User Admin</Link> },
+            { key: '6', label: <Link to="/admin/users/client_user">User Client</Link> },
+        ],
+    },
 ];
 const LayoutAdmin: React.FC = () => {
     const {
